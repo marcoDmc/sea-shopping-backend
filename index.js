@@ -10,4 +10,4 @@ app.use(express.json());
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(routes);
-app.listen(port, () => console.info(`server on in port ${port}`));
+app.listen(process.env.PORT || 80, () => console.info(`server on in port ${port}`));
